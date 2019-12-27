@@ -1,0 +1,46 @@
+@use 'styles/variables' as v
+aside
+  background: v.$module
+  width: v.$sidenav
+  height: 100vh
+  transition: 0.3s ease-out
+  overflow: hidden
+  position: relative
+  z-index: 10
+  flex-shrink: 0
+  @include v.shadow-medium
+  &:hover
+    width: v.$sidenav-open
+
+  .aside-head
+    height: calc(#{v.$header-size} + 10px)
+    width: v.$sidenav-open
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 600
+    opacity: 0.8
+nav
+  display: flex
+  flex-direction: column
+  a
+    width: v.$sidenav-open
+    height: 55px
+    color: #444
+    text-decoration: none
+    display: flex
+    align-items: center
+    margin-bottom: 3px
+    transition: .2s
+    &.selected
+      background: rgba(v.$theme, .08)
+      height: 69px
+    &:hover
+      background: rgba(v.$theme, .08)
+    .icon
+      width: v.$header-size
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      opacity: .8
