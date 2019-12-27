@@ -9,7 +9,7 @@ class Sidenav extends Component {
     return (  
       <aside>
         <div className="aside-head">
-          <span className='light'>Hey</span>
+          <span className='light'>v0.1</span>
         </div>
         <nav>
         <NavLink exact to="/" activeClassName="selected">
