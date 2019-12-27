@@ -4,7 +4,7 @@ class PageHead extends Component {
   constructor(props) {
     super(props);
     this.state = {  
-      height: props.height || 250
+      height: props.height || 260
     }
   }
   render() { 
