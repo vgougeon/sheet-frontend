@@ -1,0 +1,27 @@
+@use 'styles/variables' as v
+.artists-grid
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  grid-gap: v.$margin
+  padding-left: v.$margin
+  padding-right: v.$margin
+  
+article
+  background: v.$module
+  transition: .2s
+  &:hover
+    background: mix(v.$module, v.$theme, 70%)
+    img
+      filter: contrast(1.1)
+  @include v.shadow-medium
+
+  img
+    margin-left: calc(-#{v.$margin} / 2)
+    height: calc(#{v.$heads} * 2 - #{v.$margin})
+    width: calc(#{v.$heads} * 2 - #{v.$margin})
+    object-fit: cover
+    object-position: center
+    border-radius: 4px
+    margin-right: v.$margin
+    transition: .2s
+

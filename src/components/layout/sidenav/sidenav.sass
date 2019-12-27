@@ -1,6 +1,6 @@
 @use 'styles/variables' as v
 aside
-  background: v.$module
+  background: v.$sidenav-color
   width: v.$sidenav
   height: 100vh
   transition: 0.3s ease-out
@@ -26,16 +26,16 @@ nav
   a
     width: v.$sidenav-open
     height: 55px
-    color: #444
+    color: v.$color
     text-decoration: none
     display: flex
     align-items: center
     margin-bottom: 3px
     transition: .2s
     &.selected
-      background: rgba(v.$theme, .08)
+      background: rgba(v.$color, .08)
     &:hover
-      background: rgba(v.$theme, .08)
+      background: rgba(v.$color, .08)
     .icon
       width: v.$header-size
       height: 100%

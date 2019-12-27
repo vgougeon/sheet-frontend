@@ -32,7 +32,7 @@ const Container = () => {
       <Sidenav />
       <div className="w-100">
         <Header />
-        <section>
+        <section className="page">
           <Routes />
         </section>
       </div>

@@ -1,9 +1,13 @@
 @use 'styles/variables' as v
-section
+section.page
   width: 100%
   height: calc(100vh - #{v.$header-size})
   overflow-y: auto
   overflow-x: hidden
   position: relative
+section.content
+  margin-top: -#{v.$heads}
+  position: relative
+  z-index: 3
 .flex
   display: flex
